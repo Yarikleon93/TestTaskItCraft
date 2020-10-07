@@ -1,0 +1,13 @@
+<h1>Список пользователей</h1>
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+          <div class="col userheder">ID</div>
+          <div class="col userheder">Login</div>
+          <div class="col userheder">Name</div>
+          
+        </div>
+        <app-user-item *ngFor="let item of users?.message" [item]="item"></app-user-item>
+    </div>
+    <button class="btn btn-warning" (click)="logout()">Выход</button>
+</div>
